@@ -44,6 +44,7 @@ var app = angular.module('app', ['service', 'sharedServices']);
 			
 			$scope.saveOrUpdatePerson = function() {
 				var person = $scope.currentPerson;
+				person.phoneNumber = $('#phoneNumber').val();
 				if(!person.id) {
 					//save mode
 					if(!captchaIsValid()) {
