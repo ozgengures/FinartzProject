@@ -10,6 +10,7 @@ Go to the root project directory
 Run the following maven commands 
 
 mvn install
+
 mvn jetty:run
 
 also db configurations can be set with these parameters:
